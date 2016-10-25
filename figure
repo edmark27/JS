@@ -1,0 +1,24 @@
+var out8 = "", out9 = "", black = "\u2588\u2588", white = "\u0020\u0020", times = 27;
+
+for(var i = 0; i < 28; i++, times--){
+	for(var j = 0; j < times; j++){
+	out8 = out8 + white;
+	}
+	out8 = out8 + black + "\r\n";
+	black = black + "\u2588\u2588" + "\u2588\u2588";
+}
+
+var white = "\u0020\u0020", black = "\u2588\u2588", timesW = 1, timesB = 53;
+
+for(var k = 0; k < 27; k++, timesW++, timesB = timesB - 2){
+	
+	for(var w = 0; w < timesW; w++){
+	out9 = out9 + white;	
+	}
+	for(var w = 0; w < timesB; w++){
+	out9 = out9 + black;	
+	}
+	out9 = out9 +  "\r\n";
+		
+}
+console.log(out8 + out9);
